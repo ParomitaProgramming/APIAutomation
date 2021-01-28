@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="6536" started-at="2021-01-28T07:31:48Z" finished-at="2021-01-28T07:31:54Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="6536" started-at="2021-01-28T07:31:48Z" finished-at="2021-01-28T07:31:54Z">
+      <class name="com.qa.tests.APIGetTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.tests.APIGetTest@8a9f61]" name="setup" is-config="true" duration-ms="184" started-at="2021-01-28T07:31:48Z" finished-at="2021-01-28T07:31:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getTest()[pri:0, instance:com.qa.tests.APIGetTest@8a9f61]" name="getTest" duration-ms="6303" started-at="2021-01-28T07:31:48Z" finished-at="2021-01-28T07:31:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTest -->
+      </class> <!-- com.qa.tests.APIGetTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
