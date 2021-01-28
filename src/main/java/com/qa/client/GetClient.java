@@ -1,6 +1,7 @@
 package com.qa.client;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Set;
 
@@ -15,18 +16,23 @@ import org.json.JSONObject;
 
 public class GetClient {
 
-	public String GetConnectionStatus(String apiURL) throws ClientProtocolException, IOException
+	public ArrayList<String> GetConnectionStatus(String apiURL) throws ClientProtocolException, IOException
 	{
 		CloseableHttpClient httpClient = HttpClients.createDefault();
 		HttpGet httpGet = new HttpGet(apiURL);
 		CloseableHttpResponse httpResponse = httpClient.execute(httpGet);
 		
-		System.out.println("Connection Status: "+httpResponse.getStatusLine().getStatusCode());
-		System.out.println("Connection Phrase: "+httpResponse.getStatusLine().getReasonPhrase());
+		String Connection_Status = Integer.toString(httpResponse.getStatusLine().getStatusCode());
+		String Connection_Phrase = httpResponse.getStatusLine().getReasonPhrase();
 		
 		String response = EntityUtils.toString(httpResponse.getEntity(),"UTF-8");
 		
-		return response;
+		ArrayList<String> responseList = new ArrayList<String>();
+		responseList.add(Connection_Status);
+		responseList.add(Connection_Phrase);
+		responseList.add(response);
+		
+		return responseList;
 	}
 	
 	public String NestedJSONResponse(String resp, String jPath)

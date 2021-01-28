@@ -2,19 +2,23 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6536" started-at="2021-01-28T07:31:48Z" finished-at="2021-01-28T07:31:54Z">
+  <suite name="Default suite" duration-ms="6594" started-at="2021-01-28T14:25:23Z" finished-at="2021-01-28T14:25:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6536" started-at="2021-01-28T07:31:48Z" finished-at="2021-01-28T07:31:54Z">
+    <test name="Default test" duration-ms="6594" started-at="2021-01-28T14:25:23Z" finished-at="2021-01-28T14:25:30Z">
       <class name="com.qa.tests.APIGetTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.tests.APIGetTest@8a9f61]" name="setup" is-config="true" duration-ms="184" started-at="2021-01-28T07:31:48Z" finished-at="2021-01-28T07:31:48Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.tests.APIGetTest@17e2f02]" name="setup" is-config="true" duration-ms="116" started-at="2021-01-28T14:25:23Z" finished-at="2021-01-28T14:25:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getTest()[pri:0, instance:com.qa.tests.APIGetTest@8a9f61]" name="getTest" duration-ms="6303" started-at="2021-01-28T07:31:48Z" finished-at="2021-01-28T07:31:54Z">
+        <test-method status="PASS" signature="getTest()[pri:0, instance:com.qa.tests.APIGetTest@17e2f02]" name="getTest" duration-ms="6248" started-at="2021-01-28T14:25:23Z" finished-at="2021-01-28T14:25:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.tests.APIGetTest@17e2f02]" name="tearDown" is-config="true" duration-ms="215" started-at="2021-01-28T14:25:30Z" finished-at="2021-01-28T14:25:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.qa.tests.APIGetTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
