@@ -53,7 +53,7 @@ public class APIGetTest extends TestBase {
 		String ID = dataProp.getProperty("id");
 		String FirstName = dataProp.getProperty("first_name");
 		String LastName = dataProp.getProperty("last_name");
-		String Email = dataProp.getProperty("email");
+		String Emailid = dataProp.getProperty("email");
 
 		HashMap<String, String> valueList = getClient.FetchValueByField(apiResponse, dataProp.keySet(), LastName);
 
@@ -61,7 +61,7 @@ public class APIGetTest extends TestBase {
 			Assert.assertEquals(valueList.get("id"), ID);
 			Assert.assertEquals(valueList.get("first_name"), FirstName);
 			Assert.assertEquals(valueList.get("last_name"), LastName);
-			Assert.assertEquals(valueList.get("email"), Email);
+			Assert.assertEquals(valueList.get("email"), Emailid);
 			test.log(LogStatus.PASS, "Actual and Expected Values are Matching");
 		}
 		catch(Throwable e)
