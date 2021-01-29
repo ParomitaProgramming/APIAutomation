@@ -62,7 +62,7 @@ public class APIGetTest extends TestBase {
 			Assert.assertEquals(valueList.get("first_name"), FirstName);
 			Assert.assertEquals(valueList.get("last_name"), LastName);
 			Assert.assertEquals(valueList.get("email"), Emailid);
-			test.log(LogStatus.PASS, "Actual and Expected Values are Matching");
+			test.log(LogStatus.PASS, "Testing Successful. Actual and Expected Values are Matching");
 		}
 		catch(Throwable e)
 		{
